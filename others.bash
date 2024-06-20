@@ -14,6 +14,16 @@ else
     echo "google-chrome is already installed."
 fi
 
+# Install Discord
+if ! command_exists discord; then
+    wget https://dl.discordapp.net/apps/linux/0.0.55/discord-0.0.57.deb
+    sudo dpkg -i discord-0.0.57.deb
+    sudo apt-get install -f -y
+    rm discord-0.0.57.deb
+else
+    echo "discord is already installed."
+fi
+
 
 # Install Postman
 if ! command_exists postman; then
