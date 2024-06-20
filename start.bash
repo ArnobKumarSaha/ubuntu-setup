@@ -34,5 +34,6 @@ bash ide.bash
 bash k8s.bash
 bash node.bash
 bash others.bash
+bash git.bash
 bash cloud.bash
 

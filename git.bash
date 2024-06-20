@@ -18,3 +18,5 @@ while true; do
     read -r line
     echo "$line" | grep -q "$TEXT" && break
 done
+
+bash repo-clone.bash
