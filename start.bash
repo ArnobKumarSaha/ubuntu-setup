@@ -29,13 +29,12 @@ sudo apt install -y ubuntu-restricted-extras \
 
 
 bash docker.bash
+bash git.bash
 bash go.bash
 bash node.bash
 bash ide.bash
-bash git.bash
 
 bash env.bash
 bash k8s.bash
-bash others.bash
 bash cloud.bash
-
+bash others.bash
