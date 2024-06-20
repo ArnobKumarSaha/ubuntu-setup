@@ -30,10 +30,12 @@ sudo apt install -y ubuntu-restricted-extras \
 
 bash docker.bash
 bash go.bash
-bash ide.bash
-bash k8s.bash
 bash node.bash
-bash others.bash
+bash ide.bash
 bash git.bash
+
+bash env.bash
+bash k8s.bash
+bash others.bash
 bash cloud.bash
 
