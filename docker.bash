@@ -12,7 +12,7 @@ if ! command -v docker &> /dev/null; then
 
     sudo groupadd docker
     sudo usermod -aG docker $USER
-    newgrp docker
+    # newgrp docker
     # docker run hello-world
 else
     echo "Docker is already installed."

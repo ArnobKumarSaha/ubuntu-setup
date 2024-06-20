@@ -21,6 +21,17 @@ if ! command_exists postman; then
     sudo tar -xzf postman.tar.gz -C /opt
     sudo ln -s /opt/Postman/Postman /usr/bin/postman
     rm postman.tar.gz
+
+    sudo echo '[Desktop Entry]
+Name=Postman
+GenericName=Postman
+Comment=Postman API Tool
+Exec=/usr/bin/postman
+Icon=/opt/Postman/app/resources/app/assets/icon.png
+Terminal=false
+Type=Application
+Categories=Development;
+    ' > /usr/share/applications/postman.desktop
 else
     echo "Postman is already installed."
 fi
@@ -33,13 +44,15 @@ else
 fi
 
 # Install Spotify
-if ! command_exists spotify; then
-    curl -sS https://download.spotify.com/debian/pubkey.gpg | sudo apt-key add -
-    echo "deb http://repository.spotify.com stable non-free" | sudo tee /etc/apt/sources.list.d/spotify.list
-    sudo apt-get update && sudo apt-get install -y spotify-client
-else
-    echo "Spotify is already installed."
-fi
+# if ! command_exists spotify; then
+#     sudo apt install -y curl gnupg2 software-properties-common
+#     curl -sS https://download.spotify.com/debian/pubkey_5E3C45D7B312C643.gpg | gpg --dearmor | sudo tee /usr/share/keyrings/spotify-archive-keyring.gpg > /dev/null
+#     echo "deb [signed-by=/usr/share/keyrings/spotify-archive-keyring.gpg] http://repository.spotify.com stable non-free" | sudo tee /etc/apt/sources.list.d/spotify.list
+#     sudo apt update
+#     sudo apt install -y spotify-client
+# else
+#     echo "Spotify is already installed."
+# fi
 
 # Install VLC
 if ! command_exists vlc; then

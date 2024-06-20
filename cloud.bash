@@ -18,6 +18,7 @@ if ! command -v aws &> /dev/null; then
     unzip awscliv2.zip
     sudo ./aws/install
     rm awscliv2.zip
+    rm -rf aws
 else
     echo "aws is already installed."
 fi
@@ -58,6 +59,7 @@ if ! command -v clusterctl &> /dev/null; then
 # https://cluster-api.sigs.k8s.io/user/quick-start#install-clusterctl
     curl -L https://github.com/kubernetes-sigs/cluster-api/releases/download/v1.7.3/clusterctl-linux-amd64 -o clusterctl
     sudo install -o root -g root -m 0755 clusterctl /usr/local/bin/clusterctl
+    rm clusterctl
 else
     echo "clusterctl is already installed."
 fi
