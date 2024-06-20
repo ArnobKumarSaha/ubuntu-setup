@@ -23,6 +23,7 @@ ar[5]="kubestash.dev kubestash addon-template apimachinery installer kubedb-mani
 ar[5]="kmodules.xyz kmodules client-go codespan-schema-checker controller-runtime custom-resources offshoot-api resource-metadata resource-metrics webhook-runtime"
 ar[6]="kubepack.dev kubepack chart-doc-gen kubepack lib-app lib-helm"
 ar[7]="go.appscode.dev appscode alerts blog grafana-dashboards"
+ar[8]="github.com/Arnobkumarsaha ArnobKumarSaha basic-k8s-client bashscripting bytebuilders-files kubedb-files kubestash-files oauth"
 
 
 for i in ${!ar[@]}
