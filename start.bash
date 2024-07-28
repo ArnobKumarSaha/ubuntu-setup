@@ -33,6 +33,7 @@ bash git.bash
 bash go.bash
 bash node.bash
 bash ide.bash
+bash mongo.bash
 
 bash env.bash
 bash k8s.bash
