@@ -54,15 +54,14 @@ else
 fi
 
 # Install Spotify
-# if ! command_exists spotify; then
-#     sudo apt install -y curl gnupg2 software-properties-common
-#     curl -sS https://download.spotify.com/debian/pubkey_5E3C45D7B312C643.gpg | gpg --dearmor | sudo tee /usr/share/keyrings/spotify-archive-keyring.gpg > /dev/null
-#     echo "deb [signed-by=/usr/share/keyrings/spotify-archive-keyring.gpg] http://repository.spotify.com stable non-free" | sudo tee /etc/apt/sources.list.d/spotify.list
-#     sudo apt update
-#     sudo apt install -y spotify-client
-# else
-#     echo "Spotify is already installed."
-# fi
+if ! command_exists spotify; then
+    # https://www.spotify.com/de-en/download/linux/
+    curl -sS https://download.spotify.com/debian/pubkey_C85668DF69375001.gpg | sudo gpg --dearmor --yes -o /etc/apt/trusted.gpg.d/spotify.gpg
+    echo "deb http://repository.spotify.com stable non-free" | sudo tee /etc/apt/sources.list.d/spotify.list
+    sudo apt-get update && sudo apt-get install spotify-client
+else
+    echo "Spotify is already installed."
+fi
 
 # Install VLC
 if ! command_exists vlc; then
