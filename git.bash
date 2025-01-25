@@ -24,10 +24,13 @@ while true; do
     echo "$line" | grep -q "$TEXT" && break
 done
 
-bash repo-clone.bash
 
 
 git config --global \
 url."https://"$GITHUB_USER":"$GITHUB_TOKEN"@github.com".insteadOf \
 "https://github.com"
 go env -w GOPRIVATE='github.com/appscode/*,go.appscode.dev/*,kubedb.dev/*,github.com/ak8sdb/*,kubeops.dev/*,go.bytebuilders.dev/*,kubepack.dev/*,kubestash.dev/*,stash.appscode.dev/*'
+
+
+bash repo-clone.bash
+

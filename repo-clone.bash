@@ -1,6 +1,6 @@
 #! /bin/bash
 
-GO_SRC=/home/arnob/go/src/
+GO_SRC=/home/$USER/go/src/
 
 # curl -L \
 #   -H "Accept: application/vnd.github+json" \

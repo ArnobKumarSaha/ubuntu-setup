@@ -1,7 +1,8 @@
 #!/bin/bash
 
 # AUTHOR : Arnob kumar saha
-# Date : 16-6-2024
+# Creation Date : 16-6-2024
+# Last Update : 25-1-2025
 # Usage : ./stash.bash
 
 : '
@@ -38,4 +39,5 @@ bash mongo.bash
 bash env.bash
 bash k8s.bash
 bash cloud.bash
+bash vault.bash
 bash others.bash

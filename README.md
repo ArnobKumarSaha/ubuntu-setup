@@ -1,10 +1,13 @@
 ## Set up your ubuntu machine at ease
 
 
-- Clone this directory & cd into it
-
-- Make the scripts executable & run
 ```
+# Run from bash
+
+sudo apt install git
+git clone https://github.com/ArnobKumarSaha/ubuntu-setup.git
+cd ubuntu-setup
+
 chmod +x *.bash
 ./start.bash
 ```

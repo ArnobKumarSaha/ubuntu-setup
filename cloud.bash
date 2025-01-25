@@ -52,10 +52,10 @@ fi
 
 if ! command -v doctl &> /dev/null; then
 # https://docs.digitalocean.com/reference/doctl/how-to/install/
-    wget https://github.com/digitalocean/doctl/releases/download/v1.104.0/doctl-1.104.0-linux-amd64.tar.gz
-    tar xf doctl-1.104.0-linux-amd64.tar.gz
+    wget https://github.com/digitalocean/doctl/releases/download/v1.120.1/doctl-1.120.1-linux-amd64.tar.gz
+    tar xf doctl-1.120.1-linux-amd64.tar.gz
     sudo mv doctl /usr/local/bin
-    rm doctl-1.104.0-linux-amd64.tar.gz
+    rm doctl-1.120.1-linux-amd64.tar.gz
 else
     echo "doctl is already installed."
 fi
@@ -76,7 +76,7 @@ fi
 
 if ! command -v clusterctl &> /dev/null; then
 # https://cluster-api.sigs.k8s.io/user/quick-start#install-clusterctl
-    curl -L https://github.com/kubernetes-sigs/cluster-api/releases/download/v1.7.3/clusterctl-linux-amd64 -o clusterctl
+    curl -L https://github.com/kubernetes-sigs/cluster-api/releases/download/v1.9.4/clusterctl-linux-amd64 -o clusterctl
     sudo install -o root -g root -m 0755 clusterctl /usr/local/bin/clusterctl
     rm clusterctl
 else

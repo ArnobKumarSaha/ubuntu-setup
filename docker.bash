@@ -12,8 +12,9 @@ if ! command -v docker &> /dev/null; then
 
     sudo groupadd docker
     sudo usermod -aG docker $USER
-    # newgrp docker
-    # docker run hello-world
+
+    echo
+    echo "Now re-login / restart the pc; Otherwise docker will not work with non-root users."
 else
     echo "Docker is already installed."
 fi

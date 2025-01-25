@@ -1,0 +1,3 @@
+
+# Default fish history path
+/home/$USER/.local/share/fish/fish_history
