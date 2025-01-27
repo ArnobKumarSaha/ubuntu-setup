@@ -1,9 +1,7 @@
 #!/bin/bash
 
-# AUTHOR : Arnob kumar saha
-# Creation Date : 16-6-2024
 # Last Update : 25-1-2025
-# Usage : ./stash.bash
+# Usage : ./start.bash
 
 : '
 	This script is intended to run
@@ -32,12 +30,12 @@ sudo apt install -y ubuntu-restricted-extras \
 bash docker.bash
 bash git.bash
 bash go.bash
-bash node.bash
+# bash node.bash
 bash ide.bash
-bash mongo.bash
+# bash mongo.bash
 
 bash env.bash
 bash k8s.bash
-bash cloud.bash
-bash vault.bash
+# bash cloud.bash
+# bash vault.bash
 bash others.bash

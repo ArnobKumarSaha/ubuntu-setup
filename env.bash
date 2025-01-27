@@ -5,20 +5,20 @@ echo '
 export RESTIC_PASSWORD=changeit
 export NATS_ADDR=nats://this-is-nats.appscode.ninja:4222
 export THIS_IS_NATS_USERNAME=admin
-export THIS_IS_NATS_PASSWORD=<>
+export THIS_IS_NATS_PASSWORD="your_password_here"
 
 # AWS
 export AWS_ACCESS_KEY_ID=AKIAWSYRJ2YD7MKOK3YV
-export AWS_SECRET_ACCESS_KEY=<>
+export AWS_SECRET_ACCESS_KEY="your_password_here"
 
 # Linode
 export AWS_ACCESS_KEY_ID=34F9JI2JM8DOJC6NUPII
-export AWS_SECRET_ACCESS_KEY=<>
+export AWS_SECRET_ACCESS_KEY="your_password_here"
 
 # others
-export REPOSITORY=arnobkumarsaha
+export REPOSITORY=neajmorshad
 export IMAGE_PULL_POLICY=IfNotPresent
-export LICENSE_FILE=/home/arnob/yamls/license/kind.txt
+export LICENSE_FILE=/home/neaj/Downloads/kind-license.txt
 export GOOGLE_APPLICATION_CREDENTIALS=$HOME/yamls/gcp-creds.json
 export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
 ' >> ~/.bashrc
@@ -28,6 +28,7 @@ export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
 echo "
 # GIT
 alias gs 'git status'
+alias gg 'git gui'
 alias gac 'git add . && git commit -m'
 alias gb 'git branch'
 alias gco 'git checkout'

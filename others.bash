@@ -54,14 +54,14 @@ else
 fi
 
 # Install Spotify
-if ! command_exists spotify; then
-    # https://www.spotify.com/de-en/download/linux/
-    curl -sS https://download.spotify.com/debian/pubkey_C85668DF69375001.gpg | sudo gpg --dearmor --yes -o /etc/apt/trusted.gpg.d/spotify.gpg
-    echo "deb http://repository.spotify.com stable non-free" | sudo tee /etc/apt/sources.list.d/spotify.list
-    sudo apt-get update && sudo apt-get install spotify-client
-else
-    echo "Spotify is already installed."
-fi
+# if ! command_exists spotify; then
+#     # https://www.spotify.com/de-en/download/linux/
+#     curl -sS https://download.spotify.com/debian/pubkey_C85668DF69375001.gpg | sudo gpg --dearmor --yes -o /etc/apt/trusted.gpg.d/spotify.gpg
+#     echo "deb http://repository.spotify.com stable non-free" | sudo tee /etc/apt/sources.list.d/spotify.list
+#     sudo apt-get update && sudo apt-get install spotify-client
+# else
+#     echo "Spotify is already installed."
+# fi
 
 # Install VLC
 if ! command_exists vlc; then
@@ -79,4 +79,17 @@ if ! command_exists zoom; then
     rm zoom_latest_amd64.deb
 else
     echo "Zoom is already installed."
+fi
+
+
+# Install Dropbox
+if ! command_exists dropbox; then
+    # Download the Dropbox installer
+    wget -O dropbox.deb https://www.dropbox.com/download?dl=packages/ubuntu/dropbox_2023.1.9_amd64.deb
+    # Install the package
+    sudo dpkg -i dropbox.deb
+    sudo apt-get install -f -y
+    rm dropbox.deb
+else
+    echo "Dropbox is already installed."
 fi

@@ -10,12 +10,10 @@ GO_SRC=/home/$USER/go/src/
 
 
 declare -A ar
-ar[0]="kubedb.dev kubedb apimachinery autoscaler cli crd-manager db-client-go docs installer ops-manager schema-manager tests ui-server webhook-server
-  cassandra clickhouse druid elasticsearch ferretdb kafka mariadb memcached mongodb mssqlserver mysql perconaxtradb pgbouncer pgpool postgres proxysql rabbitmq redis singlestore solr zookeeper
-  mongodb-init-docker mongodb-restic-plugin
-"
+ar[0]="kubedb.dev kubedb apimachinery autoscaler cli crd-manager db-client-go docs elasticsearch installer kafka mariadb
+        mssqlserver mssql-coordinator mssql-init-docker mongodb mongodb-init-docker mongodb-restic-plugin mysql ops-manager postgres redis schema-manager tests ui-server webhook-server"
 
-ar[1]="kubeops.dev kubeops external-dns-operator falco-ui-server installer operator-shard-manager panopticon petset scanner sidekick supervisor trivydb-docker ui-server"
+ar[1]="kubeops.dev kubeops falco-ui-server installer panopticon scanner sidekick trivydb-docker ui-server"
 ar[2]="go.bytebuilders.dev appscode-cloud b3 catalog catalog-manager cluster-presets cluster-ui grafana installer kubedb-ui platform-ui launchpad
          lib-selfhost license-proxyserver service-provider ui-wizards"
 
@@ -25,7 +23,7 @@ ar[5]="kubestash.dev kubestash addon-template apimachinery installer kubedb-mani
 ar[5]="kmodules.xyz kmodules client-go codespan-schema-checker controller-runtime custom-resources offshoot-api resource-metadata resource-metrics webhook-runtime"
 ar[6]="kubepack.dev kubepack chart-doc-gen kubepack lib-app lib-helm"
 ar[7]="go.appscode.dev appscode alerts blog grafana-dashboards"
-ar[8]="github.com/Arnobkumarsaha ArnobKumarSaha basic-k8s-client bashscripting bytebuilders-files kubedb-files kubestash-files oauth"
+ar[8]="github.com/Neaj-Morshad-101 yamls SQL-Server-Kubernetes-Operator"
 
 
 for i in ${!ar[@]}

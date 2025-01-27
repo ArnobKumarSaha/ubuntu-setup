@@ -5,10 +5,10 @@
     You can get a PAT from github -> settings -> developer settings -> Create Personal access token
 '
 
-git config --global user.name "Arnob kumar saha"
-git config --global user.email arnob@appscode.com
+git config --global user.name "Neaj Morshad"
+git config --global user.email neaj@appscode.com
 
-ssh-keygen -t rsa -C "arnob@appscode.com"
+ssh-keygen -t rsa -C "neaj@appscode.com"
 ps -e  | grep [s]sh-agent
 ssh-add ~/.ssh/id_rsa
 ssh-add -l
