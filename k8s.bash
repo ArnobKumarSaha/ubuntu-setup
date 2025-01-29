@@ -25,7 +25,7 @@ if ! command -v kubectl &> /dev/null; then
         ./"${KREW}" install krew
     )
     kubectl krew install view-secret
-    kubectl krew install sterm
+    kubectl krew install stern
 else
     echo "kubectl is already installed."
 fi
