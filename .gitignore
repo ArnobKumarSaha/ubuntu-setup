@@ -1,0 +1,2 @@
+# Ignore GoLand (and other JetBrains IDE) settings
+.idea/
