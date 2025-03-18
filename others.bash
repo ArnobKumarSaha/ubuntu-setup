@@ -92,3 +92,15 @@ if ! command_exists trivy; then
 else
     echo "Trivy is already installed."
 fi
+
+
+# Install yq
+if ! command_exists yq; then
+    curl -fsSL -o yqq https://github.com/mikefarah/yq/releases/download/3.3.0/yq_linux_amd64
+    chmod +x yqq
+    sudo mv yqq /usr/local/bin/yqq
+    sudo apt install pipx
+    pipx install yq
+else
+    echo "yq is already installed."
+fi

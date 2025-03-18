@@ -21,6 +21,7 @@ export IMAGE_PULL_POLICY=IfNotPresent
 export LICENSE_FILE=/home/arnob/yamls/license/kind.txt
 export GOOGLE_APPLICATION_CREDENTIALS=$HOME/yamls/gcp-creds.json
 export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
+export PATH="$PATH:/home/arnob/.local/bin"
 ' >> ~/.bashrc
 
 
