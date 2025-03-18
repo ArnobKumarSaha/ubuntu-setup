@@ -6,7 +6,7 @@ if ! command -v kubectl &> /dev/null; then
     kubectl version --client
 
 
-    go install sigs.k8s.io/kind@v0.26.0
+    go install sigs.k8s.io/kind@v0.27.0
     kind create cluster
 
     curl -L -o kubebuilder "https://go.kubebuilder.io/dl/latest/$(go env GOOS)/$(go env GOARCH)"

@@ -5,7 +5,7 @@ if ! command -v go &> /dev/null; then
 	if [ "$#" == 1 ]; then
 		GO_VERSION="$1"
 	else
-		GO_VERSION=1.23.5
+		GO_VERSION=1.24.1
 	fi
 	wget https://golang.org/dl/go${GO_VERSION}.linux-amd64.tar.gz
 	if [ $? != 0 ]; then

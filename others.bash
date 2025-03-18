@@ -16,10 +16,11 @@ fi
 
 # Install Discord
 if ! command_exists discord; then
-    wget https://dl.discordapp.net/apps/linux/0.0.81/discord-0.0.81.deb
-    sudo dpkg -i discord-0.0.81.deb
+    DISCORD_VERSION=0.0.81
+    wget https://dl.discordapp.net/apps/linux/$DISCORD_VERSION/discord-$DISCORD_VERSION.deb
+    sudo dpkg -i discord-$DISCORD_VERSION.deb
     sudo apt-get install -f -y
-    rm discord-0.0.81.deb
+    rm discord-$DISCORD_VERSION.deb
 else
     echo "discord is already installed."
 fi
