@@ -24,8 +24,11 @@ while true; do
     echo "$line" | grep -q "$TEXT" && break
 done
 
-
-
+# PAT
+echo "Also Go to Developer settings page; Get a PAT token; Paste it in the promt & Enter"
+read -r line
+export GITHUB_USER=arnobkumarsaha
+export GITHUB_TOKEN="$line"
 git config --global \
 url."https://"$GITHUB_USER":"$GITHUB_TOKEN"@github.com".insteadOf \
 "https://github.com"
