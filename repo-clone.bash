@@ -17,15 +17,21 @@ ar[0]="kubedb.dev kubedb apimachinery autoscaler cli crd-manager db-client-go do
 
 ar[1]="kubeops.dev kubeops external-dns-operator falco-ui-server installer operator-shard-manager panopticon petset scanner sidekick supervisor trivydb-docker ui-server"
 ar[2]="go.bytebuilders.dev appscode-cloud b3 catalog catalog-manager cluster-presets cluster-ui grafana installer kubedb-ui platform-ui launchpad
-         lib-selfhost license-proxyserver service-provider ui-wizards"
+         lib-selfhost license-proxyserver service-provider ui-samples ui-wizards"
 
-ar[4]="stash.appscode.dev stashed apimachinery enterprise installer mongodb"
-ar[5]="kubestash.dev kubestash addon-template apimachinery installer kubedb-manifest kubestash"
+ar[3]="stash.appscode.dev stashed apimachinery enterprise installer mongodb"
+ar[4]="kubestash.dev kubestash addon-template apimachinery installer kubedb-manifest kubestash"
 
-ar[5]="kmodules.xyz kmodules client-go codespan-schema-checker controller-runtime custom-resources offshoot-api resource-metadata resource-metrics webhook-runtime"
-ar[6]="kubepack.dev kubepack chart-doc-gen kubepack lib-app lib-helm"
-ar[7]="go.appscode.dev appscode alerts blog grafana-dashboards"
-ar[8]="github.com/Arnobkumarsaha ArnobKumarSaha basic-k8s-client bashscripting bytebuilders-files kubedb-files kubestash-files oauth"
+ar[5]="voyagermesh.dev voyagermesh envoy gateway gateway-api gateway-converter installer k8s-gateway-api"
+ar[6]="kubevault.dev kubevault apimachinery installer operator"
+
+ar[7]="go.opscenter.dev ops-center alerts grafana-dashboards inbox-agent installer"
+ar[8]="kluster-manager kluster-manager cluster-auth cluster-gateway cluster-profile installer"
+
+ar[9]="kmodules.xyz kmodules client-go codespan-schema-checker controller-runtime custom-resources image-packer offshoot-api resource-metadata resource-metrics webhook-runtime"
+ar[10]="kubepack.dev kubepack chart-doc-gen kubepack lib-app lib-helm"
+ar[11]="go.appscode.dev blog gitops"
+ar[12]="github.com/Arnobkumarsaha ArnobKumarSaha basic-k8s-client bashscripting bytebuilders-files kubedb-files kubestash-files oauth"
 
 
 for i in ${!ar[@]}
